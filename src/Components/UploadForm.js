@@ -6,6 +6,7 @@ export default function UploadForm() {
     const [error, setError] = useState(null);
     const [file, setFile] = useState(null);
 
+    // acceptable types of images
     const types = ["image/jpeg","image/png"];
 
     function uploadHandler(e) {
