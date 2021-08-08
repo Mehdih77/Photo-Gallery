@@ -1,38 +1,33 @@
-.App {
+.gallery-container{
+  max-width: 1000px;
+  margin: 0 auto!important;
+}
+/* UploadForm.js styles */
+.upload-form{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input[type='file']{
+  display: none;
+}
+.upload-btn{
+  display: block;
+  font-size: 30px;
+  border: 3px solid rgb(0, 43, 185);
+  color: rgb(0, 43, 185);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  margin: 50px auto;
+  font-weight: bold;
+  line-height: 25px;
+}
+.upload-error{
+  color: red;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.progress-bar{
+  height: 5px;
+  background-color: green;
+  margin-top: 15px;
 }
