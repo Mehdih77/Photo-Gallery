@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import './App.css';
+import Header from './Components/Header';
+import UploadForm from './Components/UploadForm';
 import ImgGrid from './Components/ImgGrid';
 import Modal from './Components/Modal';
-import UploadForm from './Components/UploadForm';
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
 
   return (
     <div className="gallery-container">
+          <Header />
           <UploadForm />
           <ImgGrid setSelectedImage={setSelectedImage} />
           { selectedImage && <Modal selectedImage={selectedImage} setSelectedImage={setSelectedImage} />}

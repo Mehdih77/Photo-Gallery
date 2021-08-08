@@ -30,7 +30,7 @@ export default function UploadForm() {
                 <span className='upload-btn'>+</span>
             </label>
             { error && <p className='upload-error'>{error}</p>}
-            { file && <p className='upload-file-name'>{file.name}</p>}
+            {/* { file && <p className='upload-file-name'>{file.name}</p>} */}
             { file && <ProgressBar file={file} setFile={setFile} /> }
         </div>
     )

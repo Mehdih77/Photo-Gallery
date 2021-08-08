@@ -1,44 +1,105 @@
-.gallery-container{
+.gallery-container {
   max-width: 1000px;
-  margin: 0 auto!important;
+  margin: 0 auto;
+  padding: 10px;
 }
-/* UploadForm.js styles */
-.upload-form{
+/* Header.js styles */
+.header {
+  color: #fff;
   text-align: center;
 }
-input[type='file']{
+.top-title {
+  border-bottom: 1px solid rgb(93, 93, 93);
+  padding-bottom: 10px;
+  letter-spacing: 2px;
+  font-size: 24px;
+}
+.header img {
+  border-radius: 50%;
+  width: 110px;
+}
+.profile {
+  display: flex;
+  justify-content: space-around;
+  font-size: 23px;
+}
+.posts p:nth-of-type(2),
+.followers p:nth-of-type(2),
+.followings p:nth-of-type(2) {
+  margin-top: -15px;
+  font-size: 17px;
+}
+.profile-btn {
+  width: 80%;
+  padding: 8px;
+  background-color: rgb(24, 23, 23);
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  border: 1px solid rgb(93, 93, 93);
+}
+.profile-setting-btn {
+  width: 8%;
+  padding: 8px;
+  margin: 30px 0 20px 10px;
+  background-color: rgb(24, 23, 23);
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  border: 1px solid rgb(93, 93, 93);
+}
+.profile-setting-btn:hover,
+.profile-btn:hover {
+  background-color: rgba(24, 23, 23, 0.582);
+}
+/* UploadForm.js styles */
+.upload-form {
+  text-align: center;
+  border-top: 1px solid rgb(93, 93, 93);
+  position: relative;
+  margin: 30px 0;
+}
+input[type="file"] {
   display: none;
 }
-.upload-btn{
+.upload-btn {
   display: block;
-  font-size: 30px;
-  border: 3px solid rgb(0, 43, 185);
-  color: rgb(0, 43, 185);
+  font-size: 52px;
+  border: 2px solid rgb(93, 93, 93);
+  color: rgb(134, 134, 134);
+  background-color: rgb(24, 23, 23);
   border-radius: 50%;
-  width: 30px;
-  height: 30px;
+  width: 45px;
+  height: 45px;
   cursor: pointer;
-  margin: 50px auto;
   font-weight: bold;
-  line-height: 25px;
+  line-height: 35px;
+  position: absolute;
+  top: -25px;
+  left: 50%;
 }
-.upload-error{
+.upload-btn:hover {
+  background-color: rgb(19, 16, 16);
+}
+.upload-error {
   color: red;
+  margin-top: 35px;
+  font-size: 15px
 }
 
 /* ProgressBar.js styles */
-.progress-bar{
+.progress-bar {
   height: 5px;
-  background-color: green;
-  margin-top: 15px;
+  background-color: rgb(0, 77, 0);
+  margin-top: 35px;
 }
 
 /* ImgGrid.js styles */
-.img-grid{
-  margin: 20px auto;
+.img-grid {
+  margin: 50px auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 40px;
+  grid-gap: 20px;
 }
 .img-wrap {
   overflow: hidden;
@@ -47,16 +108,17 @@ input[type='file']{
   position: relative;
   opacity: 0.8;
 }
-.img-wrap img{
+.img-wrap img {
   min-height: 100%;
   min-width: 100%;
   max-width: 150%;
   position: absolute;
   top: 0;
   left: 0;
+  cursor: pointer;
 }
 /* Modal.js styles */
-.backdrop{
+.backdrop {
   position: fixed;
   top: 0;
   left: 0;
